@@ -1,25 +1,30 @@
-//promise
-//synchronous and asynchronous
-
-function A(){
-
-    setTimeout(()=>{
-for(let i=0;i<=30;i++){
-    console.log("hello from ",i);
-    
-}
-
-    },10000)
-}
+//States
+//pending
+//fullfill(completed)-resolve 
+//incomplted(failed)-reject
 
 
-function B(){
-    console.log("helloB")
-}
-
-A()
-B()
+let promise=false
+let obj1=new Promise(function (resolve,reject){
 
 
-//Asynchrounous -callback promises async await ,setTimeout setInterval
+    if(promise== true){
+        resolve("yest promise complted")
+    }else{
+        reject("failed promise,i didnt bought the cloths")
+       
+    }
+
+})
+
+obj1.then((res)=>{
+console.log("response from resolve",res);
+
+}).catch((res)=>{
+console.log("promise rejected (failed)",res);
+
+})
+
+
+
 
