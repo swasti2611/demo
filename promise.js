@@ -4,6 +4,7 @@
 //incomplted(failed)-reject
 
 
+//coment added fjnjkfnkgmkg.
 let promise=false
 let obj1=new Promise(function (resolve,reject){
 
@@ -28,3 +29,4 @@ console.log("promise rejected (failed)",res);
 
 
 
+ 
